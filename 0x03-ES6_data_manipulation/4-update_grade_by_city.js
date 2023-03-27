@@ -1,7 +1,7 @@
-export default function updateStudentGradeByCity(listsStudents, city, newGrades) {
+export default function updateStudentGradeByCity(listStudents, city, newGrades) {
   const students = listStudents.filter((student) => student.location === city);
   for (const student of students) {
-    student.grade = "N/A';
+    student.grade = 'N/A';
   }
   const newStudents = students.map((student) => {
     const single = student;
