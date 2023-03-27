@@ -6,7 +6,7 @@ export default function updateStudentGradeByCity(listStudents, city, newGrades) 
   const newStudents = students.map((student) => {
     const single = student;
     for (const grade of newGrades) {
-      if (single.id === grade.studentsId) {
+      if (single.id === grade.studentId) {
         single.grade = grade.grade;
       }
     }
